@@ -1008,6 +1008,9 @@ button:active, button:focus {
   .price-block__order__img {
     height: 190px;
   }
+  .price-block__order__form input {
+    padding: 6px;
+  }
   .priceList-block {
     width: 293px;
   }
@@ -1035,6 +1038,12 @@ button:active, button:focus {
   .modal__dialog {
     width: 300px;
     height: 340px;
+  }
+  .modal-form__title {
+    font-size: 28px;
+  }
+  .modal-form__input {
+    padding: 6px;
   }
 }
 /*# sourceMappingURL=main.css.map */
