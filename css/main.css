@@ -48,7 +48,6 @@ button:active, button:focus {
 
 .header {
   padding: 38px;
-  background: #EEEEEE;
 }
 
 .header-information__logo__bold {
@@ -753,7 +752,7 @@ button:active, button:focus {
     margin: 0 auto;
   }
   .priceList-block__4 {
-    padding-left: 0;
+    padding-left: 16px;
   }
   .priceList-button {
     width: 200px;
@@ -777,7 +776,7 @@ button:active, button:focus {
     padding-left: 7px;
   }
   .header-phone {
-    margin: 0 auto;
+    margin: -22px auto;
   }
   .header-phone img {
     margin-top: 14px;

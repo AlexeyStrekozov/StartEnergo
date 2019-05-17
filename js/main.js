@@ -1,4 +1,4 @@
-$(".phone_mask").mask("+7 (999) 999-99-99"); // Маска для телфона
+$(".phone_mask").mask("+7 (999) 999-99-999"); // Маска для телфона
 
 // Модальное окно
 $(document).ready(function () { 
@@ -17,7 +17,7 @@ $(document).ready(function () {
             url: "php/send.php",
             data: $("#form1").serialize(),
             success: function(){
-                alert('Спсибо с вами свяжуться');
+                
             }
             
         });
@@ -33,7 +33,7 @@ $(document).ready(function(){
             url: "php/send.php",
             data: $("#form2").serialize(),
             success: function(){
-                alert('Спсибо с вами свяжуться');
+               
             }
         });
         $("#form2")[0].reset();
@@ -48,7 +48,7 @@ $(document).ready(function(){
             url: "php/send.php",
             data: $("#form3").serialize(),
             success: function(){
-                alert('Спсибо с вами свяжуться');
+                
             }
         });
         $("#form3")[0].reset();
@@ -63,7 +63,7 @@ $(document).ready(function(){
             url: "php/send.php",
             data: $("#form4").serialize(),
             success: function(){
-                alert('Спсибо с вами свяжуться');
+                
             }
         });
         $("#form4")[0].reset();
@@ -78,7 +78,7 @@ $(document).ready(function(){
             url: "php/send.php",
             data: $("#formModal").serialize(),
             success: function(){
-                alert('Спсибо с вами свяжуться');
+                
             }
         });
         $("#formModal")[0].reset();
