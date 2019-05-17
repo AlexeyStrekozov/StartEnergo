@@ -928,9 +928,15 @@ button:active, button:focus {
   .hidden-xs {
     display: none;
   }
+  .header-information {
+    width: 146px;
+  }
   .header-information__logo {
     margin: 0 auto;
     margin-bottom: 10px;
+  }
+  .header-phone {
+    width: 184px;
   }
   .header-phone img {
     margin-top: -3px;
@@ -1003,7 +1009,7 @@ button:active, button:focus {
     height: 190px;
   }
   .priceList-block {
-    width: 293px;
+    width: 271px;
   }
   .priceList-block__4 {
     padding-left: 12px;
@@ -1026,7 +1032,6 @@ button:active, button:focus {
   .modal__dialog {
     width: 300px;
     height: 340px;
-    margin: 152px 10px;
   }
 }
 /*# sourceMappingURL=main.css.map */
