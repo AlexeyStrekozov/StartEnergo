@@ -285,6 +285,7 @@ button:active, button:focus {
 .price-block__order__img {
   background-image: url("../images/price/tool.jpg");
   background-repeat: no-repeat;
+  height: 198px;
 }
 
 .price-block__order__img__2 {
@@ -847,6 +848,12 @@ button:active, button:focus {
   .price-title {
     font-size: 35px;
     line-height: 40px;
+  }
+  .price-block__order__img {
+    background-position: center;
+  }
+  .price-block__name {
+    text-align: center;
   }
   .workProcess {
     padding-top: 30px;
