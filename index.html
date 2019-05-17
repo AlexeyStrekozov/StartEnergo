@@ -175,12 +175,12 @@
                             </div>
                             <div class="price-block__order__form col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                 <div class="form-group">
-                                    <form action="">
+                                    <form action="#" class="js-ajax" id="form1">
                                         <div class="price-block__order__form__name">Площадь помещения</div>
-                                        <input class="price-block__order__form__text mb-3" type="text" name="" id="">
+                                        <input class="price-block__order__form__text mb-3" type="text" name="fio" required>
                                         <div class="price-block__order__form__name">Телефон</div>
-                                        <input class="price-block__order__form__tel phone_mask" type="tel" name="" id="" placeholder="+7 (___) ___-__-__">
-                                        <div><button class="button button-order">Оставить заявку</button></div>
+                                        <input class="price-block__order__form__tel phone_mask" type="tel" name="phone" required placeholder="+7 (___) ___-__-__">
+                                        <div><button class="button button-order" type="submit" >Оставить заявку</button></div>
                                     </form>
                                 </div>
                             </div>
@@ -196,12 +196,12 @@
                             </div>
                             <div class="price-block__order__form col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                 <div class="form-group">
-                                    <form action="">
+                                    <form action="#" class="js-ajax2" id="form2">
                                         <div class="price-block__order__form__name">Площадь помещения</div>
-                                        <input class="price-block__order__form__text mb-3" type="text" name="" id="">
+                                        <input class="price-block__order__form__text mb-3" type="text" name="fio" required>
                                         <div class="price-block__order__form__name">Телефон</div>
-                                        <input class="price-block__order__form__tel phone_mask" type="tel" name="" id="" placeholder="+7 (___) ___-__-__">
-                                        <div><button class="button button-order">Оставить заявку</button></div>
+                                        <input class="price-block__order__form__tel phone_mask" type="tel" name="phone" required placeholder="+7 (___) ___-__-__">
+                                        <div><button class="button button-order" type="submit" >Оставить заявку</button></div>
                                     </form>
                                 </div>
                             </div>
@@ -217,12 +217,12 @@
                             </div>
                             <div class="price-block__order__form col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                 <div class="form-group">
-                                    <form action="">
+                                    <form action="#" class="js-ajax3" id="form3">
                                         <div class="price-block__order__form__name">Площадь помещения</div>
-                                        <input class="price-block__order__form__text mb-3" type="text" name="" id="">
+                                        <input class="price-block__order__form__text mb-3" type="text" name="fio" required>
                                         <div class="price-block__order__form__name">Телефон</div>
-                                        <input class="price-block__order__form__tel phone_mask" type="tel" name="" id="" placeholder="+7 (___) ___-__-__">
-                                        <div><button class="button button-order">Оставить заявку</button></div>
+                                        <input class="price-block__order__form__tel phone_mask" type="tel" name="phone" required placeholder="+7 (___) ___-__-__">
+                                        <div><button class="button button-order" type="submit" >Оставить заявку</button></div>
                                     </form>
                                 </div>
                             </div>
@@ -238,12 +238,12 @@
                             </div>
                             <div class="price-block__order__form col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                 <div class="form-group">
-                                    <form action="">
+                                    <form action="#" class="js-ajax4" id="form4">
                                         <div class="price-block__order__form__name">Площадь помещения</div>
-                                        <input class="price-block__order__form__text mb-3" type="text" name="" id="">
+                                        <input class="price-block__order__form__text mb-3" type="text" name="fio" required>
                                         <div class="price-block__order__form__name">Телефон</div>
-                                        <input class="price-block__order__form__tel phone_mask" type="tel" name="" id="" placeholder="+7 (___) ___-__-__">
-                                        <div><button class="button button-order">Оставить заявку</button></div>
+                                        <input class="price-block__order__form__tel phone_mask" type="tel" name="phone" required placeholder="+7 (___) ___-__-__">
+                                        <div><button class="button button-order" type="submit" >Оставить заявку</button></div>
                                     </form>
                                 </div>
                             </div>
@@ -490,10 +490,10 @@
           <div class="modal-form">
             <h2 class="modal-form__title">Оставить заявку</h2>
             <div class="modal-form__subtitle">Заполните поля - мы свяжемся с Вами</div>
-            <form action="#" class="modal-form__request" id=>
-              <input type="text" name="fio" class="modal-form__input" placeholder="Имя">
-              <input type="tel" name="phone" class="modal-form__input phone_mask" minlength="11" maxlength="11" placeholder="+7 (___) ___-__-__">
-              <button id="" type="submit" class="button button-order modal__form__button">Оставить заявку</button>
+            <form action="#" class="modal-form__request js-ajaxModal" id="formModal">
+              <input type="text" name="fio" class="modal-form__input" placeholder="Имя" required>
+              <input type="tel" name="phone" class="modal-form__input phone_mask" minlength="11" maxlength="11" placeholder="+7 (___) ___-__-__" required>
+              <button type="submit" class="button button-order modal__form__button">Оставить заявку</button>
             </form>
           </div>
         </div>

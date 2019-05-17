@@ -114,6 +114,7 @@ button:active, button:focus {
 }
 
 .main {
+  background-color: #002648;
   background-image: url("../images/main/main-bk.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -227,6 +228,7 @@ button:active, button:focus {
 }
 
 .sale {
+  background: #002648;
   background-image: url("../images/sale/sale-bk.jpg");
   background-repeat: no-repeat;
   background-position: center;
