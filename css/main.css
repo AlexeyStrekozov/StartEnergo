@@ -1009,7 +1009,7 @@ button:active, button:focus {
     height: 190px;
   }
   .priceList-block {
-    width: 271px;
+    width: 293px;
   }
   .priceList-block__4 {
     padding-left: 12px;
@@ -1022,6 +1022,9 @@ button:active, button:focus {
   }
   .priceList-block__name__3::before {
     left: 0;
+  }
+  .priceList-table {
+    width: 293px;
   }
   .footer-title {
     font-size: 29px;
