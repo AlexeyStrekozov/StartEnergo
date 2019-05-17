@@ -1,0 +1,64 @@
+.workProcess
+    padding-top: 70px
+    padding-bottom: 57px
+    background: #F7F7F7
+    &-title
+        font-family: Roboto
+        font-style: normal
+        font-weight: 300
+        font-size: 48px
+        line-height: 56px
+        color: #212121
+        margin-bottom: 46px
+    &-block
+        width: 216px
+        min-height: 216px
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        background: #E9E9E9
+        text-align: center
+        &::before
+            content: url("../images/workProcess/right.png")
+            position: absolute
+            margin-left: 121px
+        &__1
+            margin-left: -36px
+        &__5
+            &::before
+                content: ""
+        &__text
+            font-family: Roboto
+            font-style: normal
+            font-weight: 300
+            font-size: 16px
+            line-height: 22px
+            width: 202px
+            a 
+                color: #000000
+                font-weight: bold
+                &:hover
+                    text-decoration: none
+    &-lightning
+        margin-top: 60px
+        font-family: Roboto
+        font-style: normal
+        font-weight: 300
+        font-size: 16px
+        line-height: 22px
+        text-align: center
+        color: #212121
+        div
+            margin-top: 14px
+
+@-moz-document url-prefix()
+    .workProcess
+        &-block
+            &::before
+                content: url("../images/workProcess/right.png")
+                position: absolute
+                margin-left: 238px
+            &__5
+                &::before
+                    content: ""
