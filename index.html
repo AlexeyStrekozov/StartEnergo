@@ -263,10 +263,10 @@
                   </div> 
                   <div class="workProcess-block__text">
                         Вы оставляете заявку<br>или звоните по <br> телефону<br>
-                        <a href="tel:8 919 566 05 68">8 919 566 05 68</a>
+                        <a href="tel:89195660568">8 919 566 05 68</a>
                   </div>
                 </div>
-                <div class="workProcess-block ml-xl-4 ml-lg-3 ml-md-4 col-xl-2.4 col-lg-2.4">
+                <div class="workProcess-block ml-xl-4 ml-lg-3 col-xl-2.4 col-lg-2.4">
                   <div class="workProcess-block__img mb-4">
                       <img src="images/workProcess/phone.png" alt="Телефон">
                   </div> 
@@ -274,7 +274,7 @@
                         Наш консультант связывается с вами и уточняет все <br>детали, цену и сроки
                   </div>
                 </div>
-                <div class="workProcess-block ml-xl-4 ml-lg-3  col-xl-2.4 col-lg-2.4">
+                <div class="workProcess-block ml-xl-4 ml-lg-3   col-xl-2.4 col-lg-2.4">
                   <div class="workProcess-block__img mb-4">
                       <img src="images/workProcess/contract.png" alt="Контракт">
                   </div> 
@@ -282,7 +282,7 @@
                         Согласование <br>договора
                   </div>
                 </div>
-                <div class="workProcess-block ml-xl-4 ml-lg-3 ml-md-4 col-xl-2.4 col-lg-2.4">
+                <div class="workProcess-block ml-xl-4 ml-lg-3  col-xl-2.4 col-lg-2.4">
                   <div class="workProcess-block__img mb-4">
                       <img src="images/workProcess/calendar.png" alt="calendar">
                   </div> 
@@ -290,7 +290,7 @@
                         Выполнение работ <br>точно в срок
                   </div>
                 </div>
-                <div class="workProcess-block workProcess-block__5 ml-xl-4 ml-lg-3 ml-md-4 col-xl-2.4 col-lg-2.4">
+                <div class="workProcess-block workProcess-block__5 ml-xl-4 ml-lg-3   col-xl-2.4 col-lg-2.4">
                   <div class="workProcess-block__img mb-4">
                       <img src="images/workProcess/warranty.png" alt="Телефон">
                   </div> 
@@ -308,11 +308,11 @@
     <div class="priceList">
         <div class="container">
             <div class="priceList-title">Прайс-лист на услуги</div>
-            <div class="priceList-block col-xl-12 col-lg-12 col-md-7">
+            <div class="priceList-block col-xl-12 col-lg-12 ">
                 <div class="priceList-block__name priceList-block__name__1">МОНТАЖ освещения, розеток, счетчиков</div>
                 <div class="priceList-block__cost">Стоимость указана в рублях за шт.</div>
                 <div class="row  justify-content-between">
-                    <table class="priceList-table col-5.6">    
+                    <table class="priceList-table priceList-table__1 col-5.6">    
                         <tr>
                             <td>Ремонт люстры с пультом ДУ</td>
                             <td>600</td>
@@ -355,7 +355,7 @@
                         </tr>
                         
                     </table>
-                    <table class="priceList-table col-5.6">    
+                    <table class="priceList-table priceList-table__2 col-5.6">    
                             <tr>
                                 <td>Замена счетчика (однофазный монтаж)</td>
                                 <td>600</td>
@@ -388,7 +388,7 @@
                 </div>
             </div>
             <div class="row justify-content-between">
-                <div class="priceList-block  col-xl-6 col-lg-6 col-md-7 ">
+                <div class="priceList-block priceList-block__3  col-xl-6 ">
                     <div class="priceList-block__name priceList-block__name__2">МОНТАЖ ЭЛЕКТРОПРОВОДКИ</div>
                     <div class="priceList-block__cost">Стоимость указана в рублях за погонный метр</div>
                     <div class="row  justify-content-between">
@@ -425,7 +425,7 @@
                     </>
                     </div>
                 </div>
-                <div class="priceList-block priceList-block__4  col-xl-6 col-lg-6 col-md-7">
+                <div class="priceList-block priceList-block__4  col-xl-6   ">
                     <div class="priceList-block__name priceList-block__name__3">МОНТАЖ РАСПРЕД. ОБОРУДОВАНИЯ</div>
                     <div class="priceList-block__cost">Стоимость указана в рублях за шт.</div>
                     <div class="row  justify-content-between">
@@ -492,9 +492,17 @@
             <div class="modal-form__subtitle">Заполните поля - мы свяжемся с Вами</div>
             <form action="#" class="modal-form__request js-ajaxModal" id="formModal">
               <input type="text" name="fio" class="modal-form__input" placeholder="Имя" required>
-              <input type="tel" name="phone" class="modal-form__input phone_mask" minlength="11" maxlength="11" placeholder="+7 (___) ___-__-__" required>
+              <input type="tel" name="phone" class="modal-form__input phone_mask" minlength="11" maxlength="12" placeholder="+7 (___) ___-__-__" required>
               <button type="submit" class="button button-order modal__form__button">Оставить заявку</button>
             </form>
+          </div>
+        </div>
+    </div>
+
+    <div class="modal modal_hidden" id="modal-thank">
+        <div class="modal__dialog modal__thank">
+          <div class="modal-form">
+            <h2 class="modal-form__title">Спасибо! Ожидайте звонка.</h2>
           </div>
         </div>
     </div>

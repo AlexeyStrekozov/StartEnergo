@@ -1,4 +1,4 @@
-$(".phone_mask").mask("+7 (999) 999-99-999"); // Маска для телфона
+$(".phone_mask").mask(" +9 (999) 999-99-99"); // Маска для телфона
 
 // Модальное окно
 $(document).ready(function () { 
@@ -8,6 +8,9 @@ $(document).ready(function () {
     $('.modal__close').on('click', function () {
       $('#modal-callback').toggleClass('modal_visible');
     })
+    $('#modal-thank').on('click', function () {
+        $('#modal-thank').toggleClass('modal_visible');
+      })
   })
 
   $(document).ready(function(){
@@ -16,10 +19,9 @@ $(document).ready(function () {
             type: "POST",
             url: "php/send.php",
             data: $("#form1").serialize(),
-            success: function(){
-                
-            }
-            
+        }).done(function () {
+            $("#modal-callback").removeClass("modal_visible");
+            $("#modal-thank").addClass("modal_visible");
         });
         $("#form1")[0].reset();
         return false;
@@ -32,9 +34,9 @@ $(document).ready(function(){
             type: "POST",
             url: "php/send.php",
             data: $("#form2").serialize(),
-            success: function(){
-               
-            }
+        }).done(function () {
+            $("#modal-callback").removeClass("modal_visible");
+            $("#modal-thank").addClass("modal_visible");
         });
         $("#form2")[0].reset();
         return false;
@@ -47,9 +49,9 @@ $(document).ready(function(){
             type: "POST",
             url: "php/send.php",
             data: $("#form3").serialize(),
-            success: function(){
-                
-            }
+        }).done(function () {
+            $("#modal-callback").removeClass("modal_visible");
+            $("#modal-thank").addClass("modal_visible");
         });
         $("#form3")[0].reset();
         return false;
@@ -62,9 +64,9 @@ $(document).ready(function(){
             type: "POST",
             url: "php/send.php",
             data: $("#form4").serialize(),
-            success: function(){
-                
-            }
+        }).done(function () {
+            $("#modal-callback").removeClass("modal_visible");
+            $("#modal-thank").addClass("modal_visible");
         });
         $("#form4")[0].reset();
         return false;
@@ -77,9 +79,9 @@ $(document).ready(function(){
             type: "POST",
             url: "php/send.php",
             data: $("#formModal").serialize(),
-            success: function(){
-                
-            }
+        }).done(function () {
+            $("#modal-callback").removeClass("modal_visible");
+            $("#modal-thank").addClass("modal_visible");
         });
         $("#formModal")[0].reset();
         return false;

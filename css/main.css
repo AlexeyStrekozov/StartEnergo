@@ -113,8 +113,8 @@ button:active, button:focus {
 }
 
 .main {
-  background-color: #002648;
-  background-image: url("../images/main/main-bk.jpg");
+  background-color: #021a43;
+  background-image: url("../images/main/main-bk2.jpg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -443,7 +443,7 @@ button:active, button:focus {
 }
 
 .priceList-block__4 {
-  padding-left: 81px;
+  padding-left: 68px;
 }
 
 .priceList-block__name {
@@ -481,7 +481,7 @@ button:active, button:focus {
   position: absolute;
   border: 1px solid #212121;
   width: 34px;
-  left: 26px;
+  left: 7px;
   top: 67px;
 }
 
@@ -499,6 +499,10 @@ button:active, button:focus {
 
 .priceList-table {
   width: 496px;
+}
+
+.priceList-table tr td:last-child {
+  text-align: right;
 }
 
 .priceList-button {
@@ -563,6 +567,8 @@ button:active, button:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .modal__dialog {
@@ -650,7 +656,25 @@ button:active, button:focus {
     padding-right: 4px;
   }
   .priceList-table {
+    width: 452px;
+  }
+  .priceList-table__1 {
+    margin-left: -15px;
+  }
+  .priceList-table__2 {
+    margin-left: -15px;
+  }
+  .priceList-block__3 {
     width: 460px;
+  }
+  .priceList-block__4 {
+    width: 460px;
+  }
+  .priceList-block__name__3::before {
+    display: none;
+  }
+  .priceList-block__4 {
+    padding-left: 9px;
   }
 }
 
@@ -727,6 +751,7 @@ button:active, button:focus {
   }
   .workProcess-block {
     width: 113px;
+    margin-left: 1.3rem;
   }
   .workProcess-block::before {
     margin-left: 67px;
@@ -743,16 +768,31 @@ button:active, button:focus {
     line-height: 14px;
   }
   .priceList {
+    width: 460px;
+    margin: 0 auto;
     padding-bottom: 45px;
+  }
+  .priceList-table__2 {
+    margin-left: -15px;
   }
   .priceList-title {
     text-align: center;
   }
   .priceList-block {
+    width: 100%;
     margin: 0 auto;
   }
   .priceList-block__4 {
     padding-left: 16px;
+  }
+  .priceList-block__name__1 {
+    margin-left: -34px;
+  }
+  .priceList-block__name__1::before {
+    display: none;
+  }
+  .priceList-block__name__2::before {
+    display: none;
   }
   .priceList-button {
     width: 200px;
@@ -860,8 +900,9 @@ button:active, button:focus {
     padding-top: 30px;
   }
   .workProcess-block {
-    width: 289px;
+    width: 51%;
     margin-bottom: 15px;
+    margin-left: 0;
   }
   .workProcess-block::before {
     margin-left: -5px;
@@ -887,6 +928,12 @@ button:active, button:focus {
     padding-top: 40px;
     padding-bottom: 0;
   }
+  .priceList-table__1 {
+    margin-left: 0;
+  }
+  .priceList-table__2 {
+    margin-left: 0;
+  }
   .priceList-title {
     font-size: 35px;
     line-height: 40px;
@@ -899,15 +946,13 @@ button:active, button:focus {
     text-align: center;
   }
   .priceList-block__name::before {
-    left: 3px;
+    display: none;
   }
   .priceList-block__name__2::before {
-    left: 18px;
-    top: 45px;
+    display: none;
   }
   .priceList-block__name__3::before {
-    top: 45px;
-    left: -18px;
+    display: none;
   }
   .priceList-block__cost {
     text-align: center;
@@ -940,10 +985,10 @@ button:active, button:focus {
     width: 184px;
   }
   .header-phone img {
-    margin-top: -3px;
+    margin-top: 6px;
   }
   .header-phone__number {
-    margin-top: 0;
+    margin-top: 15px;
   }
   .main-img {
     overflow: hidden;
@@ -1012,6 +1057,18 @@ button:active, button:focus {
   .price-block__order__form input {
     padding: 6px;
   }
+  .workProcess-block {
+    width: 80%;
+  }
+  .priceList {
+    width: 100%;
+  }
+  .priceList-table__1 {
+    margin-left: 0;
+  }
+  .priceList-table__2 {
+    margin-left: 0;
+  }
   .priceList-block {
     width: 293px;
   }
@@ -1019,13 +1076,13 @@ button:active, button:focus {
     padding-left: 12px;
   }
   .priceList-block__name::before {
-    left: -9px;
+    display: none;
   }
   .priceList-block__name__2::before {
-    left: 51px;
+    display: none;
   }
   .priceList-block__name__3::before {
-    left: 0;
+    display: none;
   }
   .priceList-table {
     width: 293px;
@@ -1045,6 +1102,9 @@ button:active, button:focus {
   }
   .modal-form__input {
     padding: 6px;
+  }
+  .modal__thank {
+    height: 176px;
   }
 }
 /*# sourceMappingURL=main.css.map */
