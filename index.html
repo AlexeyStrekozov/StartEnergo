@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/ui.totop.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,900i" rel="stylesheet">
     <title>СтартЭнерго</title>
 </head>
@@ -23,7 +24,7 @@
                         <div class="header-information__address hidden-xs">
                             Курган и Курганская область
                         </div>
-                        <div class="header-information__workTime  hidden-xs"><span>пн-пт 9–19 бесплатный выезд</span></div>
+                        <div class="header-information__workTime  hidden-xs"><span>пн-пт 9–19 <br> сб-вс с 9-17  бесплатный выезд</span></div>
                     </div>
                 </div>
                 <div class="header-phone">
@@ -129,7 +130,7 @@
                     <div class="electrical-block__text">Домов и коттеджей</div>
                 </div>
                 <div class="electrical-block col-xl-4 col-lg-4 col-md-6  mt-4">
-                    <img src="images/electrical/office.jpg" alt="Офисов">
+                    <img src="images/electrical/shopping.jpg" alt="Офисов">
                     <div class="electrical-block__text">Офисов</div>
                 </div>
                 <div class="electrical-block col-xl-4 col-lg-4 col-md-6 mt-4">
@@ -175,7 +176,7 @@
                             </div>
                             <div class="price-block__order__form col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                 <div class="form-group">
-                                    <form action="#" class="js-ajax" id="form1">
+                                    <form action="#" class="js-ajax" id="form1" onsubmit="yaCounter53719516.reachGoal ('ORDER_SEND')">
                                         <div class="price-block__order__form__name">Площадь помещения</div>
                                         <input class="price-block__order__form__text mb-3" type="text" name="fio" required>
                                         <div class="price-block__order__form__name">Телефон</div>
@@ -196,7 +197,7 @@
                             </div>
                             <div class="price-block__order__form col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                 <div class="form-group">
-                                    <form action="#" class="js-ajax2" id="form2">
+                                    <form action="#" class="js-ajax2" id="form2" onsubmit="yaCounter53719516.reachGoal ('ORDER_SEND')">
                                         <div class="price-block__order__form__name">Площадь помещения</div>
                                         <input class="price-block__order__form__text mb-3" type="text" name="fio" required>
                                         <div class="price-block__order__form__name">Телефон</div>
@@ -217,7 +218,7 @@
                             </div>
                             <div class="price-block__order__form col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                 <div class="form-group">
-                                    <form action="#" class="js-ajax3" id="form3">
+                                    <form action="#" class="js-ajax3" id="form3" onsubmit="yaCounter53719516.reachGoal ('ORDER_SEND')">
                                         <div class="price-block__order__form__name">Площадь помещения</div>
                                         <input class="price-block__order__form__text mb-3" type="text" name="fio" required>
                                         <div class="price-block__order__form__name">Телефон</div>
@@ -238,7 +239,7 @@
                             </div>
                             <div class="price-block__order__form col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                 <div class="form-group">
-                                    <form action="#" class="js-ajax4" id="form4">
+                                    <form action="#" class="js-ajax4" id="form4" onsubmit="yaCounter53719516.reachGoal ('ORDER_SEND')">
                                         <div class="price-block__order__form__name">Площадь помещения</div>
                                         <input class="price-block__order__form__text mb-3" type="text" name="fio" required>
                                         <div class="price-block__order__form__name">Телефон</div>
@@ -422,7 +423,7 @@
                                 <td>280</td>
                             </tr> 
                         </table>
-                    </>
+                    </br>
                     </div>
                 </div>
                 <div class="priceList-block priceList-block__4  col-xl-6   ">
@@ -490,7 +491,7 @@
           <div class="modal-form">
             <h2 class="modal-form__title">Оставить заявку</h2>
             <div class="modal-form__subtitle">Заполните поля - мы свяжемся с Вами</div>
-            <form action="#" class="modal-form__request js-ajaxModal" id="formModal">
+            <form action="#" class="modal-form__request js-ajaxModal" id="formModal" onsubmit="yaCounter53719516.reachGoal ('ORDER_SEND')">
               <input type="text" name="fio" class="modal-form__input" placeholder="Имя" required>
               <input type="tel" name="phone" class="modal-form__input phone_mask" minlength="11" maxlength="12" placeholder="+7 (___) ___-__-__" required>
               <button type="submit" class="button button-order modal__form__button">Оставить заявку</button>
@@ -498,7 +499,6 @@
           </div>
         </div>
     </div>
-
     <div class="modal modal_hidden" id="modal-thank">
         <div class="modal__dialog modal__thank">
           <div class="modal-form">
@@ -506,8 +506,26 @@
           </div>
         </div>
     </div>
+    <a href="#" id="toTop" style="display: none;"><span id="toTopHover" style="opacity: 0;"></span>To Top</a>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/jquery.maskedinput.js"></script>
+    <script src="js/easing.js"></script>
+    <script src="js/jquery.ui.totop.min.js"></script>
     <script src="js/main.js"></script>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    
+        ym(53719516, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/53719516" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+ <!-- /Yandex.Metrika counter -->
 </body>
 </html>

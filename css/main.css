@@ -179,6 +179,13 @@ button:active, button:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.advantage-block__img:hover {
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .advantage-block__text {
@@ -224,6 +231,7 @@ button:active, button:focus {
 
 .electrical-block img {
   width: 100%;
+  height: 80%;
 }
 
 .sale {
@@ -368,12 +376,20 @@ button:active, button:focus {
           justify-content: center;
   background: #E9E9E9;
   text-align: center;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 
 .workProcess-block::before {
   content: url("../images/workProcess/right.png");
   position: absolute;
   margin-left: 121px;
+}
+
+.workProcess-block:hover {
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  border-radius: 20px;
 }
 
 .workProcess-block__1 {
@@ -671,7 +687,7 @@ button:active, button:focus {
     width: 460px;
   }
   .priceList-block__name__3::before {
-    display: none;
+    left: -48px;
   }
   .priceList-block__4 {
     padding-left: 9px;
@@ -792,6 +808,9 @@ button:active, button:focus {
     display: none;
   }
   .priceList-block__name__2::before {
+    display: none;
+  }
+  .priceList-block__name__3::before {
     display: none;
   }
   .priceList-button {
@@ -1005,6 +1024,10 @@ button:active, button:focus {
   .main-text__subtitle {
     font-size: 17px;
   }
+  .advantage {
+    padding-left: 17px;
+    padding-right: 17px;
+  }
   .advantage-title {
     font-size: 28px;
     line-height: 30px;
@@ -1072,8 +1095,14 @@ button:active, button:focus {
   .priceList-block {
     width: 293px;
   }
+  .priceList-block__cost {
+    margin-left: 0;
+  }
   .priceList-block__4 {
     padding-left: 12px;
+  }
+  .priceList-block__name {
+    margin-left: 0;
   }
   .priceList-block__name::before {
     display: none;
