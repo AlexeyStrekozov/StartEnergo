@@ -10,15 +10,14 @@ $mail->CharSet = 'utf-8';
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'smtp.mail.ru';  // Specify main and backup SMTP servers
+$mail->Host = 'smtp.yandex.ru';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'aleks_strecozov@mail.ru';                 // Наш логин
-$mail->Password = '';                           // Наш пароль от ящика
+$mail->Username = 'postsend.robot';                 // Наш логин
+$mail->Password = 'postsendrobot';                           // Наш пароль от ящика
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465;                                    // TCP port to connect to
- 
-$mail->setFrom('aleks_strecozov@mail.ru', 'Заказ');   // От кого письмо 
-$mail->addAddress('strekozovalexey@gmail.com');     // Add a recipient
+$mail->setFrom('postsend.robot@yandex.ru', 'СтартЭнерго');   // От кого письмо 
+$mail->addAddress('startenegro@yandex.ru ');     // Add a recipient
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
 //$mail->addCC('cc@example.com');

@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/ui.totop.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css"/>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,900i" rel="stylesheet">
     <title>СтартЭнерго</title>
 </head>
@@ -464,6 +466,47 @@
             </div>
         </div>
     </div>
+    <div class="trigger">
+        <div class="container">
+            <div class="trigger-title priceList-title">
+                Отзывы
+            </div>
+            <div class="your-class trigger-block" id="trigger-comments">
+                <button type="button" data-role="none" class="slick-prev slick-arrow" aria-label="Previous" role="button" style="display: block;">Previous</button>
+                <div>
+                    <div class="trigger-block__name">Кристина <div class="trigger-block__time">12.05.2019</div></div>
+                    <div class="trigger-block__text">"Часто оставляю детей дома одних. И очень переживала за состояние розеток и проводов. 
+                    Я отправила заявку, что нужно поменять все розетки и убрать несколько проводов в короба. 
+                    Ребята приехали всё замерили, проверили о оперативно провели свою работу, спасибо!"</div>
+                </div>
+                <div>
+                    <div class="trigger-block__name">Леонид Георгевич <div class="trigger-block__time">04.05.2019</div></div>
+                    <div class="trigger-block__text">Строю дом. Нужно было полностью провести проводку, но времени самому делать катастрофически нет. 
+                    Обратился в эту компанию, оставил заявку на сайте. Сработано быстро и грамотно. Советую.</div>
+                </div>
+                <div>
+                    <div class="trigger-block__name">Игорь Викторович <div class="trigger-block__time">25.04.2019</div></div>
+                    <div class="trigger-block__text">Обратились в компанию для ремонта под ключ. Понравилось, что сами приехали, 
+                    всё осмотрели и быстро ответили на все вопросы. За два-три дня офис был 
+                    полностью восстановлен по всей проводке. Работой довольны.</div>
+                </div>
+                <div>
+                    <div class="trigger-block__name">Ольга Рогова <div class="trigger-block__time">22.04.2019</div></div>
+                    <div class="trigger-block__text">На даче готовились к новому сезону. Обратились к ребяткам проверить всё в нашей даче и бане.
+                    Спасибо приехали, помогли и много не взяли.</div>
+                </div>
+                <div>
+                    <div class="trigger-block__name">Иван <div class="trigger-block__time">15.04.2019</div></div>
+                    <div class="trigger-block__text">Делали с женой ремонт. Очень сложный был момент по освещению в комнате для жены. Вызвали парней. 
+                    всё устроило как сделали. Обратимся ещё.</div>
+                </div>
+                <button type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next" role="button" style="display: block;">Next</button>
+            </div>     
+            <div class="trigger-button">
+                <button class="button button-trigger">Оставить отзыв</button>
+            </div>               
+        </div>
+    </div>
     <footer class="footer">
         <div class="container">
            <div class="footer-title">
@@ -506,12 +549,29 @@
           </div>
         </div>
     </div>
+    <div class="modal  modal_hidden" id="modal-trigger">
+        <div class="modal__dialog">
+          <div class="trigger__close">&#10006;</div>
+          <div class="modal-form modal-form__trigger">
+            <h2 class="modal-form__title">Оставить отзыв</h2>
+            <form action="#" class="modal-form__trigger" id="formTrigger">
+            <div class="row">
+                <input type="text" name="name" class="modal-form__input" placeholder="Имя" required>
+                <input type="text" name="time" class="modal-form__input mask_time" placeholder="Дата" required>
+                <textarea name="comment" cols="40" rows="3" placeholder="Отзыв..."  required></textarea>
+                <input class="button modal-trigger__button" name="trigger-send">
+            </div>
+            </form>
+          </div>
+        </div>
+    </div>
     <a href="#" id="toTop" style="display: none;"><span id="toTopHover" style="opacity: 0;"></span>To Top</a>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/jquery.maskedinput.js"></script>
     <script src="js/easing.js"></script>
     <script src="js/jquery.ui.totop.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/slick.min.js"></script>
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript" >
         (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};

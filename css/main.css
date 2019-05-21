@@ -522,7 +522,7 @@ button:active, button:focus {
 }
 
 .priceList-button {
-  margin-left: -21px;
+  /*margin-left: -21px*/
   margin-top: 69px;
 }
 
@@ -585,6 +585,10 @@ button:active, button:focus {
   display: flex;
   -webkit-transition: 1s;
   transition: 1s;
+}
+
+.modal-trigger__button {
+  margin-top: 20px;
 }
 
 .modal__dialog {
@@ -657,6 +661,66 @@ button:active, button:focus {
 .modal-form__request button {
   width: 100%;
   margin-top: 0;
+}
+
+.modal-form__trigger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 530px;
+}
+
+.modal-form__trigger form {
+  width: 100%;
+}
+
+.modal-form__trigger form input {
+  width: 200px;
+}
+
+.modal-form__trigger form textarea {
+  padding: 0 9px;
+}
+
+.trigger__close {
+  position: absolute;
+  top: 19px;
+  right: 31px;
+}
+
+.trigger__close:hover {
+  cursor: pointer;
+}
+
+.trigger {
+  background: #F7F7F7;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.trigger-title {
+  margin-bottom: 27px;
+}
+
+.trigger-block {
+  font-family: Roboto;
+  border: 3px solid #002648;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.trigger-block__name {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.trigger-button {
+  margin-top: 20px;
 }
 
 @media (max-width: 1200px) {

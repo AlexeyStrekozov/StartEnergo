@@ -1,5 +1,5 @@
 $(".phone_mask").mask(" +9 (999) 999-99-99"); // Маска для телфона
-
+$(".mask_time").mask("99.99.9999"); // Маска для времени
 // Модальное окно
 $(document).ready(function () { 
     $('.button-callback').on('click', function () {
@@ -8,10 +8,23 @@ $(document).ready(function () {
     $('.modal__close').on('click', function () {
       $('#modal-callback').toggleClass('modal_visible');
     })
+    $('.button-trigger').on('click', function () {
+      $('#modal-trigger').toggleClass('modal_visible');
+    })
+    $('.trigger__close').on('click', function () {
+      $('#modal-trigger').toggleClass('modal_visible');
+    })
     $('#modal-thank').on('click', function () {
         $('#modal-thank').toggleClass('modal_visible');
       })
   })
+
+ /* $(document).ready(function(){
+    $('.your-class ').slick({
+      
+    });
+  });*/
+
   $(document).ready(function() {
     /*\
     var defaults = {
@@ -99,4 +112,12 @@ $(document).ready(function(){
         $("#formModal")[0].reset();
         return false;
     });
+});
+
+$(document).on("click", "input[name='trigger-send']", function ()  {
+    var comment = $("textarea[name='comment']").val();
+    var name = $("input[name='name']").val();
+    var time = $("input[name='time']").val();
+    $('<div> <div class="trigger-block__name">'+ name + '<div class="trigger-block__time">'+ time +'</div> </div> <div class="trigger-block__text">'+ comment + '</div>  </div>').appendTo("div#trigger-comments");
+    
 });
