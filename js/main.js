@@ -17,13 +17,46 @@ $(document).ready(function () {
     $('#modal-thank').on('click', function () {
         $('#modal-thank').toggleClass('modal_visible');
       })
+    $('#modal-thank__trigger').on('click', function () {
+        $('#modal-thank__trigger').toggleClass('modal_visible');
+    })  
   })
 
- /* $(document).ready(function(){
+ $(document).ready(function(){
     $('.your-class ').slick({
-      
+        slidesToShow: 2,
+        
+        infinite: true,
+        slidesToScroll: 1,
+        responsive: [
+            {
+              breakpoint: 992,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                infinite: true,
+                
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+              }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ]
     });
-  });*/
+  });
 
   $(document).ready(function() {
     /*\
@@ -114,10 +147,17 @@ $(document).ready(function(){
     });
 });
 
-$(document).on("click", "input[name='trigger-send']", function ()  {
-    var comment = $("textarea[name='comment']").val();
-    var name = $("input[name='name']").val();
-    var time = $("input[name='time']").val();
-    $('<div> <div class="trigger-block__name">'+ name + '<div class="trigger-block__time">'+ time +'</div> </div> <div class="trigger-block__text">'+ comment + '</div>  </div>').appendTo("div#trigger-comments");
-    
+$(document).ready(function(){
+    $('.js-ajaxModal2').on('submit', function(){
+        $.ajax({
+            type: "POST",
+            url: "php/sendcomment.php",
+            data: $("#formTrigger").serialize(),
+        }).done(function () {
+            $("#modal-trigger").removeClass("modal_visible");
+            $("#modal-thank__trigger").addClass("modal_visible");
+        });
+        $("#formTrigger")[0].reset();
+        return false;
+    });
 });
